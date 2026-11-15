@@ -16,3 +16,5 @@ When adding a page, also add it to the header and footer menus on every page and
 ## Images
 
 All images live in `img/`. Each page's `og:image` tag sets the photo shown when the link is texted or shared.
+
+The home page hero is a still frame; the original Squarespace site used a 20-second drone video there.

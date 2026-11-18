@@ -16,6 +16,8 @@
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" as="image" type="image/webp" href="/img/home-hero-phone.webp" media="(max-width: 700px)" fetchpriority="high">
+<link rel="preload" as="image" type="image/webp" imagesrcset="/img/home-hero-1200.webp 1200w, /img/home-hero-1600.webp 1600w" imagesizes="100vw" media="(min-width: 701px)" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
@@ -39,7 +41,11 @@
 </header>
 <main id="main">
 <section class="hero">
-  <img src="/img/home-hero.jpg" alt="Aerial view of Laguna Beach along Coast Highway at dusk" fetchpriority="high">
+  <picture>
+    <source media="(max-width: 700px)" type="image/webp" srcset="/img/home-hero-phone.webp 608w" sizes="100vw">
+    <source type="image/webp" srcset="/img/home-hero-1200.webp 1200w, /img/home-hero-1600.webp 1600w" sizes="100vw">
+    <img src="/img/home-hero-1600.webp" width="1600" height="900" alt="Aerial view of Laguna Beach along Coast Highway" fetchpriority="high">
+  </picture>
   <div class="hero-text">
     <h1>Laguna Beach, Explained</h1>
     <p>The places, projects, businesses and decisions shaping Laguna Beach — clearly explained.</p>
@@ -53,7 +59,7 @@
   </ul>
 </section>
 <section class="wide">
-  <figure class="map"><img src="/img/map-five-areas.jpg" alt="Illustrated map of Laguna Beach showing its five commercial submarkets: North Laguna, Laguna Canyon, Downtown, the Village and South Laguna" loading="lazy"></figure>
+  <figure class="map"><img width="1400" height="1081" src="/img/map-five-areas.jpg" alt="Illustrated map of Laguna Beach showing its five commercial submarkets: North Laguna, Laguna Canyon, Downtown, the Village and South Laguna" loading="lazy"></figure>
 </section>
 <section class="wrap" id="areas">
   <h2>Laguna isn’t one market. It’s five.</h2>
@@ -63,7 +69,7 @@
   <h2 class="label">The five commercial areas</h2>
   <ul class="area-grid"><li><a class="area-card" href="/north-laguna" style="--c:#3f86c9"><span class="num">01</span><h3>North Laguna</h3><p>Quiet. Affluent. Surprisingly resilient.</p></a></li><li><a class="area-card" href="/laguna-canyon" style="--c:#9db83f"><span class="num">02</span><h3>Laguna Canyon</h3><p>Creative. Functional. Different by design.</p></a></li><li><a class="area-card" href="/downtown" style="--c:#e39445"><span class="num">03</span><h3>Downtown</h3><p>Busy. Visible. Competitive.</p></a></li><li><a class="area-card" href="/the-village" style="--c:#57ad57"><span class="num">04</span><h3>The Village</h3><p>Local. Eclectic. Experience-driven.</p></a></li><li><a class="area-card" href="/south-laguna" style="--c:#a95bbd"><span class="num">05</span><h3>South Laguna</h3><p>Affluent. Emerging. Destination-driven.</p></a></li></ul>
 </section>
-<section class="wide"><figure class="photo"><img src="/img/home-downtown.jpg" alt="Aerial view of Downtown Laguna Beach and the coastline" loading="lazy"></figure></section>
+<section class="wide"><figure class="photo"><img width="1600" height="977" src="/img/home-downtown.jpg" alt="Aerial view of Downtown Laguna Beach and the coastline" loading="lazy"></figure></section>
 <section class="wide">
   <h2 class="label">Also on this site</h2>
   <ul class="also">
